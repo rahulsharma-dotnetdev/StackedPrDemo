@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Forms · HTML Test Kit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="index.html">HTML Test Kit</a>
+        <nav class="nav"><a href="index.html">Home</a><a aria-current="page" href="forms.html">Forms</a><a
+                href="cards.html">Cards</a><a href="dashboard.html">Dashboard</a></nav>
+    </header>
+    <main>
+        <div class="eyebrow">Controls</div>
+        <h1>Contact form</h1>
+        <p class="lead">A standard form surface for checking native control styling and focus behavior.</p>
+        <div class="grid two section">
+            <form class="panel">
+                <div class="field"><label for="name">Full name</label><input id="name" type="text"
+                        placeholder="Ada Lovelace"></div>
+                <div class="field"><label for="email">Email address</label><input id="email" type="email"
+                        placeholder="ada@example.com">
+                    <div class="hint">We’ll only use this to reply.</div>
+                </div>
+                <div class="field"><label for="topic">Topic</label><select id="topic">
+                        <option>General question</option>
+                        <option>Feedback</option>
+                        <option>Support request</option>
+                    </select></div>
+                <div class="field"><label for="message">Message</label><textarea id="message"
+                        placeholder="Tell us a little more…"></textarea></div><label class="check"><input
+                        type="checkbox"> Send me occasional updates</label>
+                <p><button class="button" type="button">Submit message</button></p>
+            </form>
+            <aside>
+                <div class="notice"><strong>Test note:</strong> tab through the fields to inspect the focus ring.</div>
+                <div class="panel section">
+                    <h2>Field states</h2>
+                    <div class="field"><label for="disabled">Disabled input</label><input id="disabled"
+                            value="Unavailable" disabled></div>
+                    <div class="field"><label for="search">Search</label><input id="search" type="search"
+                            placeholder="Search anything"></div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">HTML Test Kit</footer>
+</body>
+
+</html>
