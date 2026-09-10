@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+
+repository_root="$(git rev-parse --show-toplevel)"
+commit_sha="$(git rev-parse HEAD)"
+
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$repository_root/scripts/on-commit.ps1" -CommitSha "$commit_sha"
