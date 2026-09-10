@@ -3,6 +3,7 @@ param(
     [string]$CommitSha
 )
 
+
 $ErrorActionPreference = 'Stop'
 
 # Add your custom post-commit action below. This starter handler only reads
